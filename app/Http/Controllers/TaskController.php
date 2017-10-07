@@ -16,6 +16,7 @@ class TaskController extends Controller
     {
         $tasks = Task::all();
         return view('tasks',['tasks' => $tasks]);
+//        return view('tasks',compact($tasks));
     }
 
     /**
